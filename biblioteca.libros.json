@@ -1,0 +1,108 @@
+[{
+  "_id": {
+    "$oid": "663971c2e4fbca1008529804"
+  },
+  "nombre": "Cien años de soledad",
+  "imagen": "https://www.rae.es/sites/default/files/portada_cien_anos_de_soledad_0.jpg",
+  "autor": "Gabriel García Márquez",
+  "genero": "Novela"
+},
+{
+  "_id": {
+    "$oid": "663971c2e4fbca1008529805"
+  },
+  "nombre": "1984",
+  "imagen": "https://assets-global.website-files.com/6034d7d1f3e0f52c50b2adee/6254291caac6d1e42e8986df_62023ceb41cd1c2807b2841a_9788418933011.jpeg",
+  "autor": "George Orwell",
+  "genero": "Ciencia ficción"
+},
+{
+  "_id": {
+    "$oid": "663971c2e4fbca1008529806"
+  },
+  "nombre": "El nombre del viento",
+  "imagen": "https://www.penguinlibros.com/ar/2125250/el-nombre-del-viento-edicion-de-lujo-por-el-10-aniversario-de-la-publicacion.jpg",
+  "autor": "Patrick Rothfuss",
+  "genero": "Fantasía"
+},
+{
+  "_id": {
+    "$oid": "663971c2e4fbca1008529807"
+  },
+  "nombre": "Orgullo y prejuicio",
+  "imagen": "https://assets-global.website-files.com/6034d7d1f3e0f52c50b2adee/625452ebb0e15e764981b44c_6034d7d1f3e0f55fcab2b2de_Orgullo-y-prejuicio-jane-austen-editorial-alma.jpeg",
+  "autor": "Jane Austen",
+  "genero": "Romance"
+},
+{
+  "_id": {
+    "$oid": "663971c2e4fbca1008529808"
+  },
+  "nombre": "Crónica de una muerte anunciada",
+  "imagen": "https://img.huffingtonpost.es/files/image_720/uploads/2022/12/08/63920c4f5ff1b.jpeg",
+  "autor": "Gabriel García Márquez",
+  "genero": "Novela"
+},
+{
+  "_id": {
+    "$oid": "663971c2e4fbca1008529809"
+  },
+  "nombre": "Harry Potter y la piedra filosofal",
+  "imagen": "https://img2.od-cdn.com/ImageType-100/3450-1/%7B633251A3-C8FD-4FB3-A190-95E07EA18B30%7DIMG100.JPG",
+  "autor": "J.K. Rowling",
+  "genero": "Fantasía"
+},
+{
+  "_id": {
+    "$oid": "663971c2e4fbca100852980a"
+  },
+  "nombre": "El código Da Vinci",
+  "imagen": "https://miro.medium.com/v2/resize:fit:1400/0*5L_LTotSjmngkedE",
+  "autor": "Dan Brown",
+  "genero": "Misterio"
+},
+{
+  "_id": {
+    "$oid": "663971c2e4fbca100852980b"
+  },
+  "nombre": "Matar un ruiseñor",
+  "imagen": "https://quelibroleo.com/images/libros/libro_1449673742.jpg",
+  "autor": "Harper Lee",
+  "genero": "Novela"
+},
+{
+  "_id": {
+    "$oid": "663971c2e4fbca100852980c"
+  },
+  "nombre": "El Hobbit",
+  "imagen": "https://www.planetadelibros.com/usuaris/libros/fotos/357/original/portada_el-hobbit_j-r-r-tolkien_202207271130.jpg",
+  "autor": "J.R.R. Tolkien",
+  "genero": "Fantasía"
+},
+{
+  "_id": {
+    "$oid": "663971c2e4fbca100852980d"
+  },
+  "nombre": "Don Quijote de la Mancha",
+  "imagen": "https://www.planetadelibros.com/usuaris/libros/fotos/374/original/portada_don-quijote-de-la-mancha-comic_miguel-de-cervantes_202310231106.jpg",
+  "autor": "Miguel de Cervantes",
+  "genero": "Novela"
+},
+{
+  "_id": {
+    "$oid": "663971c2e4fbca100852980e"
+  },
+  "nombre": "La sombra del viento",
+  "imagen": "https://www.tematika.com/media/catalog/Ilhsa/Imagenes/624973.jpg",
+  "autor": "Carlos Ruiz Zafón",
+  "genero": "Misterio"
+},
+{
+  "_id": {
+    "$oid": "663971c2e4fbca100852980f"
+  },
+  "nombre": "Juego de tronos",
+  "imagen": "https://www.penguinlibros.com/ar/2384912/juego-de-tronos-cancion-de-hielo-y-fuego-1.jpg",
+  "autor": "George R.R. Martin",
+  "genero": "Fantasía"
+}]
