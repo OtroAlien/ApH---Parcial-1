@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API de Libros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <div class="carrusel">
+    <div>
+      <div class="content">
+        <h2>Harry Potter</h2>
+        <span>J. K. Rowling</span>
+      </div>
+    </div>
+    <div>
+      <div class="content">
+        <h2>Juego de Tronos</h2>
+        <span>George R.R. Martin</span>
+      </div>
+    </div>
+    <div>
+      <div class="content">
+        <h2>El Hobbit</h2>
+        <span>J.R.R. Tolkien</span>
+      </div>
+    </div>
+    <div>
+      <div class="content">
+        <h2>Don Quijote de la Mancha</h2>
+        <span>Miguel de Cervantes</span>
+      </div>
+    </div>
+  </div>
+
+  <h1>Biblioteca</h1>
+
+  <div class="descripcion">
+    <h2>¿De que trata?</h2>
+    <p>La web accede a una base de datos con una lista de libros. Los libros cuentan con una ID unica, un titulo, una imagen y su genero literario. Los libros pueden ser filtrados por autor o genero. Tambien se puede buscar un libro por su ID o por su titulo.</p>
+    <p>Ademas, la informacion de los libros puede ser modificada. Esto quiere decir que tanto su titulo, imagen y genero pueden actualizarse.</p>
+    <p>Por otro lado, tambien es posible eliminar cualquiera de los libros que se desee.</p>
+    <p>Por ultimo, la web cuenta con un filtro para ordenar todos los libros por orden alfabético. Muy util para volver a mostrar todos los libros en caso de haber filtrado anteriormermente por genero o autor.</p>
+  </div>
+
+  <div id="menuFiltrado" class="container mt-5">
+    <h3>Filtrar por:</h3>
+    <ul class="list-unstyled">
+      <li class="mb-3"><a href="#" class="btn btn-primary" onclick="filtrarPorOrdenAlfabetico()">Orden alfabético</a></li>
+      <li class="mb-3">
+        <span>Autor:</span>
+        <select id="filtroAutor" class="form-select">
+          <option value="">Seleccionar autor</option>
+        </select>
+        <button class="btn btn-primary" onclick="filtrarPorAutor()">Filtrar</button>
+      </li>
+      <li class="mb-3">
+        <span>Género:</span>
+        <select id="filtroGenero" class="form-select">
+          <option value="">Seleccionar género</option>
+        </select>
+        <button class="btn btn-primary" onclick="filtrarPorGenero()">Filtrar</button>
+      </li>
+    </ul>
+  </div>
+  
+
+  <div id="buscador" class="container mt-5">
+    <div class="input-group mb-3">
+      <input type="text" id="inputBusqueda" class="form-control" placeholder="Buscar libros...">
+      <button class="btn btn-primary" onclick="buscarLibros()">Buscar</button>
+    </div>
+  </div>  
+
+  <div id="traerDocumento" class="container mt-5">
+    <div class="input-group mb-3">
+      <input type="text" id="inputIdDocumento" class="form-control" placeholder="ID del documento">
+      <button class="btn btn-primary" onclick="traerDocumento()">Traer documento por ID</button>
+    </div>
+  </div>
+
+  <div id="contenedorLibros" class="row mt-5">
+  </div>
+
+  <footer class="text-center mt-5">
+    <p>Desarrollado por: Facundo Paez</p>
+    <p>Materia: Aplicaciones Hibridas</p>
+    <p>Profesor: MARCOS GALBAN, Camila Belen</p>
+    <p>Comisión: DWN4AV</p>
+    <p>Año: 2024</p>
+  </footer>
+  
+  <script src="index.js"></script>
+</body>
+</html>

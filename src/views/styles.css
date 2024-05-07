@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+.descripcion{
+    margin: 3rem auto;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: rgb(165, 165, 165);
+    text-align: center;
+    width: 70%;
+}
+
+#menuFiltrado .btn-primary{
+    margin-top: 1rem;
+}
+
+.row{
+    width: 80%;
+    margin: 3rem auto;
+    justify-content: center;
+}
+
+.card{
+    width: 400px;
+    height: auto;
+}
+
+.col {
+    flex: 1 0 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-img-top {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.botones{
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(20, 20, 20);
+    color: rgb(190, 190, 190);
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+/* --------------------------- Slider --------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  background-color: rgb(220, 220, 220);
+}
+
+.carrusel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  margin: 3.5rem auto;
+  gap: 10px;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #3e3b0e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("https://img2.od-cdn.com/ImageType-100/3450-1/%7B633251A3-C8FD-4FB3-A190-95E07EA18B30%7DIMG100.JPG")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url("https://www.penguinlibros.com/ar/2384912/juego-de-tronos-cancion-de-hielo-y-fuego-1.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("https://www.planetadelibros.com/usuaris/libros/fotos/357/original/portada_el-hobbit_j-r-r-tolkien_202207271130.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("https://www.planetadelibros.com/usuaris/libros/fotos/374/original/portada_don-quijote-de-la-mancha-comic_miguel-de-cervantes_202310231106.jpg")
+        no-repeat 50% / cover;
+    }
+
+    .content {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(46, 39, 2);
+      background: linear-gradient(
+        0deg,
+        rgba(46, 39, 2, 0.676) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #d8c245;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
